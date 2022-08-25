@@ -4,9 +4,10 @@ public class Main {
     var boxer2Weight = 82.7;
     var totalWeight = boxer1Weight + boxer2Weight;
     System.out.println("Общий вес боксёров:" + totalWeight + "кг");
-    var weightDifference = boxer2Weight - boxer1Weight;
-    System.out.println("Разница в весе боксёров:" + weightDifference + "кг");
-
+    var weightDifferenceWay1 = boxer2Weight - boxer1Weight;
+    System.out.println("Разница в весе боксёров:" + weightDifferenceWay1 + "кг");
+    var weightDifferenceWay2 = (boxer2Weight) % boxer1Weight;
+    System.out.println("Разница в весе боксёров:" + weightDifferenceWay2 + "кг");
 
     }
 }
